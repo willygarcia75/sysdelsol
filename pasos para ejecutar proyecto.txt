@@ -1,0 +1,26 @@
+> cd todolist-proyecto-paradigmas
+
+>python -m venv venv #solo la primera vez
+
+>cd venv
+
+>cd Scripts
+
+>./activate
+
+El (venv) antes de la dirección nos indica que estamos dentro del entorno.
+
+>pip3 install Flask # solo la primera vez
+
+> pip install -r requirements1.txt # solo la primera vez
+
+> cd ..
+
+> cd .. #para volver a la carpeta aplicación
+
+> flask run
+
+
+..... flask db init
+flask db migrate -m "crear tablas"
+flask db upgrade

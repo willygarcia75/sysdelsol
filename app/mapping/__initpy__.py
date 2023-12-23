@@ -1,0 +1,1 @@
+from .cabana_schema import CabanaSchema
