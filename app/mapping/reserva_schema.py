@@ -1,19 +1,25 @@
-from app.models import Cabana
+from app.models import Reserva
 from marshmallow import validate, fields, Schema, post_load
 
 
-class CamabnaSchema(Schema):
+class ReservaSchema(Schema):
     id = fields.Integer(dump_only=True)
-    numero = fields.String(required=True)
-    nombre = fields.String(required=True)
-    capacidad = fields.Integer(required = True)
+    fechaini = fields.DateTime(required = True)
+    fechafin = fields.DateTime(required = True)
+    cliente_id = fields.Integer(required = True)
+ #   capacidad = fields.Integer(required = True)
 
     @post_load
-    def make_cabana(self,data, **kwargs):
-        return Cabana(**data)
+    def make_reserva(self,data, **kwargs):
+        return Reserva(**data)
     
+ 
+ #  pago está vinculado al id de la reserva
+ #   pago_id = db.Column(db.Ingeger, db.ForeignKey('pagos.id'))
+
+
     ''' El atributo dump_only en Marshmallow se utiliza para indicar que un campo debe ser 
-    ignorado durante la deserialización (es decir, durante la conversión de un formato serializado, como JSON,
+        ignorado durante la deserialización (es decir, durante la conversión de un formato serializado, como JSON,
     de vuelta a un objeto Python). En tu caso, id = fields.Integer(dump_only=True) indica que el campo id
       no se espera en los datos entrantes y no se incluirá en los datos salientes.
 

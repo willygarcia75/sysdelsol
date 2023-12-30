@@ -10,8 +10,15 @@ class Reserva(db.Model):
     id:int = db.Column('id',db.Integer, primary_key = True, autoincrement = True)
     fechaini: datetime = db.Column('fecha de inicio', db.DateTime(), nullable = False)
     fechafin: datetime = db.Column('fecha de finalizacion', db.DateTime())
-    tipopago: str = db.Column('Tipo de Pago', db.String(50))
 
-    cliente_id = db.Column(db.Integer, db.ForeignKey('clientes.id'))
-    pago_id = db.Column(db.Ingeger, db.ForeignKey('pagos.id'))
+    
+    # el tipo de pago va a estar en el 'pago'
+    # tipopago: str = db.Column('Tipo de Pago', db.String(50))
+
+# agregar sólo cuando tengamos completas las partes del Schema y modelos
+ #   cliente_id = db.Column(db.Integer, db.ForeignKey('clientes.id'))
+ 
+ 
+ #  pago está vinculado al id de la reserva
+ #   pago_id = db.Column(db.Ingeger, db.ForeignKey('pagos.id'))
 
