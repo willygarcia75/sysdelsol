@@ -5,7 +5,7 @@ from app import db
 
 
 @dataclass
-class Clientes(db.Model):
+class Cliente(db.Model):
     __tablename__ = 'clientes'
     id: int = db.Column('id',db.Integer, primary_key = True, autoincrement = True)
     apellido: str = db.Column('apellido',db.String(50))

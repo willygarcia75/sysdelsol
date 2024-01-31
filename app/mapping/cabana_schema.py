@@ -2,7 +2,7 @@ from app.models import Cabana
 from marshmallow import validate, fields, Schema, post_load
 
 
-class CamabnaSchema(Schema):
+class CabanaSchema(Schema):
     id = fields.Integer(dump_only=True)
     numero = fields.String(required=True)
     nombre = fields.String(required=True)

@@ -46,7 +46,9 @@ git log -> muestra los logs anteriores (se sale con la tecla 'q' )
 
 git add .  ----> agrega todos los archivos 
 
+git commit -m "ajustamos tablas pagos, y creamos los schemas de pagos y reservas "
 
+git push origin master
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -55,6 +57,3 @@ qué datos van a ser serializados/deserializados
 y qué datos NO van a ser serializados/deserializados
 
 (atributos dump_only, required, load_only) -----> ver estos atributos un poco mejor para entenderlos
-
-
-

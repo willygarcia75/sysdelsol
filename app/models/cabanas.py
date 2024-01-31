@@ -12,4 +12,6 @@ class Cabana(db.Model):
     nombre:str = db.Column('nombre', db.String(50))
     capacidad: int = db.Column('capacidad', db.Integer)
 
+    
+
 

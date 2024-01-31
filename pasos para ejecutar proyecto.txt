@@ -8,9 +8,9 @@
 
 >./activate
 
-El (venv) antes de la dirección nos indica que estamos dentro del entorno.
+-> El (venv) antes de la dirección nos indica que estamos dentro del entorno.
 
->pip3 install Flask # solo la primera vez
+> pip3 install Flask # solo la primera vez
 
 > pip install -r requirements1.txt # solo la primera vez
 
@@ -20,7 +20,7 @@ El (venv) antes de la dirección nos indica que estamos dentro del entorno.
 
 > flask run
 
-
-..... flask db init
+desde el raiz
+> flask db init
 flask db migrate -m "crear tablas"
 flask db upgrade
