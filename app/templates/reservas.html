@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Cabañas del Sol</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}" type="">
+    
+</head>
+<body>
+    <p> {{ 5|string }}</p>
+    <div class="titulo"> 
+        <p> Reservas de Cabañas </p>
+    </div>
+    <div class="Tabla">
+        <table>
+           <div class="Fila">
+<tr> 
+    <th> Dia  </th>
+    <th> Hab1 </th>
+    <th> Hab2 </th>
+</tr>
+           </div>
+
+           <div class="fila">
+            <tr>
+                
+                <td>ocu</td>
+                <td>libre</td>
+            </tr>
+
+        {%for i in dia %}        
+            <tr>
+                <th>   {{i}}  </th>
+                <td> ocu </td>
+                <td> libre </td>
+            </tr>
+        {% endfor %}
+            </div>
+        </table>
+    </div>
+        
+</body>
+</html>
