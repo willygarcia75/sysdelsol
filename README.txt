@@ -61,4 +61,7 @@ y qué datos NO van a ser serializados/deserializados
 (atributos dump_only, required, load_only) -----> ver estos atributos un poco mejor para entenderlos
 
 
-
+-----------------------------------------
+8 abril 2024
+Agregamos /form  y el login para iniciar
+ademas funciona
